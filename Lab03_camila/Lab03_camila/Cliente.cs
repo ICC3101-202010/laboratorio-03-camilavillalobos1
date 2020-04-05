@@ -18,27 +18,41 @@ namespace Lab03_camila
 
         }
 
-        public string Realizar_Compra()
+        public bool Realizar_Compra()
         {
+            string producto_comprado;
             int cantidad;
 
             cliente1.Realizar_Compra();
 
             Console.WriteLine(nombre);
            
-
             DateTime.Now.ToString("MM/dd/yyyy hh:mm tt");
+
             Console.Write("Acumula puntos: ");
+
             Console.WriteLine("\n 1. Si \n 2. No \n");
+
             puntossupermercado = Convert.ToInt16(Console.ReadLine());
+
             if (puntossupermercado == 1)
             {
-                puntossupermercado += 1;
+                puntossupermercado += 10;
             }
-            Console.Write("Cantidad de productos comprados: ");
+
+            Console.WriteLine("Que producto va a comprar?: ");
+
+            producto_comprado = Console.ReadLine();
+
+            Console.Write("Cantidad comprada: ");
+
             cantidad = Convert.ToInt16(Console.ReadLine());
+
             int[] productos = new int[cantidad];
 
+
+
+            return true;
 
         }
 

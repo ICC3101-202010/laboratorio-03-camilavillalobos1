@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Lab03_camila
 {
-    public class Producto
+    public class Producto 
     {
         private string nombre_producto;
         private int precio_producto;
@@ -21,10 +21,11 @@ namespace Lab03_camila
             this.marca = marca;
             this.stock = stock;
         }
-        public int Info_Stock()
+        public bool Info_Stock(string nombre_producto, int stock)
         {
 
-            return stock;
+
+            return true;
         }
 
 

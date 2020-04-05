@@ -10,7 +10,7 @@ namespace Lab03_camila
         private string Nombre;
         private string Cargo;
         private int Sueldo;
-        private string Horario;
+        private string horario;
 
         public Trabajador(string nombre, string cargo, int sueldo, string horario)
 
@@ -18,7 +18,8 @@ namespace Lab03_camila
             Nombre = nombre;
             Cargo = cargo;
             Sueldo = sueldo;
-            Horario = horario;
+
+            this.horario= horario;
         }
 
         public int SueldoTrabajador()
@@ -30,8 +31,8 @@ namespace Lab03_camila
 
         public string HorarioTrabajador() //BUSCAR COMO SE HACE LO DEL HORARIO
         {
-            DateTime date horario
-            horario = "De 08:00 a 21:00";
+            string horario;
+            horario = "De 9:00 am a 9:00 pm";
 
             return horario;
         }
@@ -40,30 +41,30 @@ namespace Lab03_camila
             char horario_inicio;
             char horario_fin;
 
-            HorarioTrabajador();
+            trabajador1.HorarioTrabajador();
+
             Console.Write("Horario de inicio: ");
             horario_inicio = Convert.ToChar(Console.ReadLine());
             Console.Write("Horario de fin: ");
             horario_fin = Convert.ToChar(Console.ReadLine());
             horario = horario.Replace(horario[4], horario_inicio);
-            horario = horario.Replace(horario[11], horario_fin);
+            horario = horario.Replace(horario[14], horario_fin);
             return horario;
         }
 
-        public int Cambiar_Sueldo()
+        public int Cambiar_Sueldo(int sueldo)
         {
-            int nuevo_sueldo;
             Console.Write("Sueldo nuevo: ");
-            nuevo_sueldo = Convert.ToInt16(Console.ReadLine());
-            return nuevo_sueldo;
+            sueldo  = Convert.ToInt16(Console.ReadLine());
+            return sueldo ;
         }
 
-        public string Cambiar_Puesto()
+        public string Cambiar_Puesto(string puesto)
         {
-            string nuevo_puesto;
+
             Console.Write("Puesto nuevo: ");
-            nuevo_puesto = (Console.ReadLine());
-            return nuevo_puesto;
+            puesto  = (Console.ReadLine());
+            return puesto ;
 
 
         }
