@@ -4,7 +4,7 @@ namespace Lab03_camila
     public class Persona
     {
         protected string Rut;
-        protected string Nombre;
+        protected string nombre;
         protected string Apellido;
         protected string Nacimiento;
         protected string Nacionalidad;
