@@ -24,7 +24,7 @@ namespace Lab03_camila
  
         }
 
-        public void Sueldo_Trabajadores(string cargo)
+        public bool SueldoTrabajadores(string cargo)
         {
             if (cargo == "Cajero")
             {
@@ -38,6 +38,8 @@ namespace Lab03_camila
             {
                 Sueldo = 300000;
             }
+
+            return true;
 
         }
         
@@ -59,17 +61,19 @@ namespace Lab03_camila
         {
 
             trabajador.Cargo  = cargo ;
+
             return cargo;
 
         }
 
 
-        Trabajador trabajador1 = new Trabajador("Pedro", "Cajero", 198000, 40);
-        Trabajador trabajador2 = new Trabajador("Camila", "Cajero", 198000, 40);
-        Trabajador trabajador3 = new Trabajador("Vicente", "Cajero", 300000, 40);
-        Trabajador trabajador4 = new Trabajador("Tomas", "Supervisor", 560000, 40);
-        Trabajador trabajador5 = new Trabajador("Javiera", "Supervisor", 400000,40);
-        Trabajador trabajador6 = new Trabajador("Benjamin", "Auxiliar", 100000, 40);
-        Trabajador trabajador7 = new Trabajador("Belen", "Cajero", 198000, 40);
+        //Trabajador trabajador1 = new Trabajador("Pedro", "Cajero", 198000, 40);
+        //Trabajador trabajador2 = new Trabajador("Camila", "Cajero", 198000, 40);
+        //Trabajador trabajador3 = new Trabajador("Vicente", "Cajero", 300000, 40);
+        //Trabajador trabajador4 = new Trabajador("Tomas", "Supervisor", 560000, 40);
+        //Trabajador trabajador5 = new Trabajador("Javiera", "Supervisor", 400000,40);
+        //Trabajador trabajador6 = new Trabajador("Benjamin", "Auxiliar", 100000, 40);
+        //Trabajador trabajador7 = new Trabajador("Belen", "Cajero", 198000, 40);
+        internal bool sueldo;
     }
 }
