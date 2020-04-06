@@ -10,72 +10,66 @@ namespace Lab03_camila
         private string Nombre;
         private string Cargo;
         private int Sueldo;
-        private string horario;
+        private int horario = 40;
 
-        public Trabajador(string nombre, string cargo, int sueldo, string horario)
+
+        public Trabajador(string nombre, string cargo, int sueldo, int horario)
 
         {
             Nombre = nombre;
             Cargo = cargo;
             Sueldo = sueldo;
+            this.horario = horario;
 
-            this.horario= horario;
+ 
         }
 
-        public int SueldoTrabajador()
+        public void Sueldo_Trabajadores(string cargo)
         {
-            int sueldoNuevo;
-            sueldoNuevo = new Random().Next(0, 999999);
-            return sueldoNuevo;
+            if (cargo == "Cajero")
+            {
+                Sueldo = 500000;
+            }
+            if (cargo == "Supervisor")
+            {
+                Sueldo = 700000;
+            }
+            if (cargo == "Auxiliar")
+            {
+                Sueldo = 300000;
+            }
+
+        }
+        
+        public bool Cambiar_Horario(Trabajador trabajador, int horario)
+
+        {
+            trabajador.horario = horario;
+
+            return true;
         }
 
-        public string HorarioTrabajador() //BUSCAR COMO SE HACE LO DEL HORARIO
+        public int Cambiar_Sueldo(Trabajador trabajador, int sueldo)
         {
-            string horario;
-            horario = "De 9:00 am a 9:00 pm";
-
-            return horario;
-        }
-        public string Cambiar_Horario()
-        {
-            char horario_inicio;
-            char horario_fin;
-
-            trabajador1.HorarioTrabajador();
-
-            Console.Write("Horario de inicio: ");
-            horario_inicio = Convert.ToChar(Console.ReadLine());
-            Console.Write("Horario de fin: ");
-            horario_fin = Convert.ToChar(Console.ReadLine());
-            horario = horario.Replace(horario[4], horario_inicio);
-            horario = horario.Replace(horario[14], horario_fin);
-            return horario;
-        }
-
-        public int Cambiar_Sueldo(int sueldo)
-        {
-            Console.Write("Sueldo nuevo: ");
-            sueldo  = Convert.ToInt16(Console.ReadLine());
+            trabajador.Sueldo = sueldo;
             return sueldo ;
         }
 
-        public string Cambiar_Puesto(string puesto)
+        public string Cambiar_Puesto(Trabajador trabajador, string cargo)
         {
 
-            Console.Write("Puesto nuevo: ");
-            puesto  = (Console.ReadLine());
-            return puesto ;
-
+            trabajador.Cargo  = cargo ;
+            return cargo;
 
         }
 
 
-        Trabajador trabajador1 = new Trabajador("Pedro", "Cajero", 198000, "part time");
-        Trabajador trabajador2 = new Trabajador("Camila", "Cajero", 198000, "part time");
-        Trabajador trabajador3 = new Trabajador("Vicente", "Cajero", 300000, "full time");
-        Trabajador trabajador4 = new Trabajador("Tomas", "Jefe", 560000, "part time");
-        Trabajador trabajador5 = new Trabajador("Javiera", "Supervisor", 400000, "part time");
-        Trabajador trabajador6 = new Trabajador("Benjamin", "Auxiliar", 100000, "part time");
-        Trabajador trabajador7 = new Trabajador("Belen", "Cajero", 198000, "part time");
+        Trabajador trabajador1 = new Trabajador("Pedro", "Cajero", 198000, 40);
+        Trabajador trabajador2 = new Trabajador("Camila", "Cajero", 198000, 40);
+        Trabajador trabajador3 = new Trabajador("Vicente", "Cajero", 300000, 40);
+        Trabajador trabajador4 = new Trabajador("Tomas", "Supervisor", 560000, 40);
+        Trabajador trabajador5 = new Trabajador("Javiera", "Supervisor", 400000,40);
+        Trabajador trabajador6 = new Trabajador("Benjamin", "Auxiliar", 100000, 40);
+        Trabajador trabajador7 = new Trabajador("Belen", "Cajero", 198000, 40);
     }
 }

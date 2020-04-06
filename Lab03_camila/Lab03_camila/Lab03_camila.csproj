@@ -34,10 +34,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Persona.cs" />
     <Compile Include="Producto.cs" />
-    <Compile Include="Supermercado.cs" />
-    <Compile Include="Comprar.cs" />
     <Compile Include="Trabajador.cs" />
     <Compile Include="Cliente.cs" />
+    <Compile Include="Comprobante.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
