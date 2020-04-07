@@ -8,15 +8,17 @@ namespace Lab03_camila
     public class Trabajador
     {
         private string Nombre;
+        private string Apellido;
         private string Cargo;
         private int Sueldo;
         private int horario = 40;
 
 
-        public Trabajador(string nombre, string cargo, int sueldo, int horario)
+        public Trabajador(string nombre, string apellido, string cargo, int sueldo, int horario)
 
         {
             Nombre = nombre;
+            Apellido = apellido;
             Cargo = cargo;
             Sueldo = sueldo;
             this.horario = horario;

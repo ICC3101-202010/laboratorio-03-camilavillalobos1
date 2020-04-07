@@ -20,13 +20,13 @@ namespace Lab03_camila
             Cliente cliente7 = new Cliente("12.345.654-8", "Raul", "Quiroga", "09-03-1970", "chileno", 0);
             Cliente cliente8 = new Cliente("19.375.654-8", "Catalina", "Muñoz", "18-06-1998", "chileno", 0);
 
-            Trabajador trabajador1 = new Trabajador("Pedro", "Cajero", 198000, 40);
-            Trabajador trabajador2 = new Trabajador("Camila", "Cajero", 198000, 40);
-            Trabajador trabajador3 = new Trabajador("Vicente", "Cajero", 300000, 40);
-            Trabajador trabajador4 = new Trabajador("Tomas", "Supervisor", 560000, 40);
-            Trabajador trabajador5 = new Trabajador("Javiera", "Supervisor", 400000, 40);
-            Trabajador trabajador6 = new Trabajador("Benjamin", "Auxiliar", 100000, 40);
-            Trabajador trabajador7 = new Trabajador("Belen", "Cajero", 198000, 40);
+            Trabajador trabajador1 = new Trabajador("Pedro", "Muñoz","Cajero", 198000, 40);
+            Trabajador trabajador2 = new Trabajador("Camila", "Villapero","Cajero", 198000, 40);
+            Trabajador trabajador3 = new Trabajador("Vicente", "Lopez","Cajero", 300000, 40);
+            Trabajador trabajador4 = new Trabajador("Tomas", "Lira","Supervisor", 560000, 40);
+            Trabajador trabajador5 = new Trabajador("Javiera","Henriquez", "Supervisor", 400000, 40);
+            Trabajador trabajador6 = new Trabajador("Benjamin","Lara", "Auxiliar", 100000, 40);
+            Trabajador trabajador7 = new Trabajador("Belen", "Sotomayor","Cajero", 198000, 40) ;
 
             Producto papas_fritas = new Producto("papas fritas", 1000, "Lays", 100);
             Producto papas = new Producto("papas", 1300, "malla", 2000);
